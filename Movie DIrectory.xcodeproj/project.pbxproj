@@ -13,6 +13,12 @@
 		43CCEF9B284476920061E894 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43CCEF99284476920061E894 /* Main.storyboard */; };
 		43CCEF9D284476980061E894 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43CCEF9C284476980061E894 /* Assets.xcassets */; };
 		43CCEFA0284476980061E894 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43CCEF9E284476980061E894 /* LaunchScreen.storyboard */; };
+		43CCEFAC284479840061E894 /* MovieListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CCEFAA284479840061E894 /* MovieListCollectionViewCell.swift */; };
+		43CCEFAD284479840061E894 /* MovieListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43CCEFAB284479840061E894 /* MovieListCollectionViewCell.xib */; };
+		43CCEFAF28447BAC0061E894 /* MovieListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CCEFAE28447BAC0061E894 /* MovieListModel.swift */; };
+		43CCEFB528447D680061E894 /* CONTENTLISTINGPAGE-PAGE3.json in Resources */ = {isa = PBXBuildFile; fileRef = 43CCEFB228447D680061E894 /* CONTENTLISTINGPAGE-PAGE3.json */; };
+		43CCEFB728447D680061E894 /* CONTENTLISTINGPAGE-PAGE2.json in Resources */ = {isa = PBXBuildFile; fileRef = 43CCEFB428447D680061E894 /* CONTENTLISTINGPAGE-PAGE2.json */; };
+		43CCEFBA284485640061E894 /* CONTENTLISTINGPAGE-PAGE1.json in Resources */ = {isa = PBXBuildFile; fileRef = 43CCEFB9284485640061E894 /* CONTENTLISTINGPAGE-PAGE1.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		43CCEF9C284476980061E894 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43CCEF9F284476980061E894 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43CCEFA1284476980061E894 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43CCEFAA284479840061E894 /* MovieListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListCollectionViewCell.swift; sourceTree = "<group>"; };
+		43CCEFAB284479840061E894 /* MovieListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieListCollectionViewCell.xib; sourceTree = "<group>"; };
+		43CCEFAE28447BAC0061E894 /* MovieListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListModel.swift; sourceTree = "<group>"; };
+		43CCEFB228447D680061E894 /* CONTENTLISTINGPAGE-PAGE3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "CONTENTLISTINGPAGE-PAGE3.json"; sourceTree = "<group>"; };
+		43CCEFB428447D680061E894 /* CONTENTLISTINGPAGE-PAGE2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "CONTENTLISTINGPAGE-PAGE2.json"; sourceTree = "<group>"; };
+		43CCEFB9284485640061E894 /* CONTENTLISTINGPAGE-PAGE1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "CONTENTLISTINGPAGE-PAGE1.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +70,51 @@
 			children = (
 				43CCEF93284476920061E894 /* AppDelegate.swift */,
 				43CCEF95284476920061E894 /* SceneDelegate.swift */,
-				43CCEF97284476920061E894 /* ViewController.swift */,
+				43CCEFB428447D680061E894 /* CONTENTLISTINGPAGE-PAGE2.json */,
+				43CCEFB9284485640061E894 /* CONTENTLISTINGPAGE-PAGE1.json */,
+				43CCEFB228447D680061E894 /* CONTENTLISTINGPAGE-PAGE3.json */,
+				43CCEFB128447D310061E894 /* API */,
+				43CCEFA82844790A0061E894 /* Model */,
+				43CCEFA7284478FE0061E894 /* ViewController */,
 				43CCEF99284476920061E894 /* Main.storyboard */,
 				43CCEF9C284476980061E894 /* Assets.xcassets */,
 				43CCEF9E284476980061E894 /* LaunchScreen.storyboard */,
 				43CCEFA1284476980061E894 /* Info.plist */,
 			);
 			path = "Movie DIrectory";
+			sourceTree = "<group>";
+		};
+		43CCEFA7284478FE0061E894 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				43CCEFA9284479210061E894 /* CollectionVIewCell */,
+				43CCEF97284476920061E894 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		43CCEFA82844790A0061E894 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				43CCEFAE28447BAC0061E894 /* MovieListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		43CCEFA9284479210061E894 /* CollectionVIewCell */ = {
+			isa = PBXGroup;
+			children = (
+				43CCEFAA284479840061E894 /* MovieListCollectionViewCell.swift */,
+				43CCEFAB284479840061E894 /* MovieListCollectionViewCell.xib */,
+			);
+			path = CollectionVIewCell;
+			sourceTree = "<group>";
+		};
+		43CCEFB128447D310061E894 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +176,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				43CCEFA0284476980061E894 /* LaunchScreen.storyboard in Resources */,
+				43CCEFB528447D680061E894 /* CONTENTLISTINGPAGE-PAGE3.json in Resources */,
 				43CCEF9D284476980061E894 /* Assets.xcassets in Resources */,
+				43CCEFB728447D680061E894 /* CONTENTLISTINGPAGE-PAGE2.json in Resources */,
 				43CCEF9B284476920061E894 /* Main.storyboard in Resources */,
+				43CCEFBA284485640061E894 /* CONTENTLISTINGPAGE-PAGE1.json in Resources */,
+				43CCEFAD284479840061E894 /* MovieListCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +193,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				43CCEF98284476920061E894 /* ViewController.swift in Sources */,
+				43CCEFAF28447BAC0061E894 /* MovieListModel.swift in Sources */,
+				43CCEFAC284479840061E894 /* MovieListCollectionViewCell.swift in Sources */,
 				43CCEF94284476920061E894 /* AppDelegate.swift in Sources */,
 				43CCEF96284476920061E894 /* SceneDelegate.swift in Sources */,
 			);
@@ -283,7 +339,7 @@
 		43CCEFA5284476980061E894 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -311,7 +367,7 @@
 		43CCEFA6284476980061E894 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
